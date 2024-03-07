@@ -7,7 +7,32 @@
 </head>
 <body>
     <script>
-        
+        //Desafio 81: crie um programa jque preencha uma matriz 3x3
+        //com valores informados pelo usuário e exiba a soma dos 
+        //valores da diagonal principal
+
+        //cria uma matriz vazia com três linhas e três colunas
+        const matriz = []
+        for (let i = 0; i < 3; i++) {
+            matriz[i]= []; 
+        }
+
+        //recebe os valores indicado pelo usuário
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                let valor = parseInt(prompt(`Digite um valor para a posição [${i}][${j}]:`))
+                matriz[i][j]= valor;
+            }   
+        }
+
+        //calcula a soma da diagonal principal
+        let soma = 0;
+        for (let i=0; i < 3; i++){
+            soma += matriz[i][i];
+        }
+
+        //exibe o valor da soma
+        console.log("a soma dos valores da diagonal princinpal é: ", soma);
     </script>
 </body>
 </html>
