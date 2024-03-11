@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Desafio com Vetores
+        //crie um programa que leia um vetor de números inteiros e
+        //exiba a soma de todos os elementos
+
+        
+        let matriz = []
+        let qtd = parseInt(prompt("Digite a quantidade de números que será informado:"))
+
+        for (let i = 0; i < qtd; i++) {
+            let valor = parseInt(prompt("Informe o valor:"));
+            matriz[i] = valor
+        }
+
+        let soma = matriz.reduce((atual, quantidade) => atual + quantidade)
+        alert("a soma dos elementos é: " + soma)
+
+
+    </script>
+</body>
+
+</html>
